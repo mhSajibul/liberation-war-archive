@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liberation War Archive - Preserving the history and memories of the Liberation War of Bangladesh">
+    <meta name="keywords" content="Liberation War, Bangladesh, History, Archive, Documents, Interviews, Photographs">
+    <title>Liberation War Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Liberation War Archive</h1>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#interviews">Interviews</a></li>
+                    <li><a href="#photographs">Photographs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h2>Preserving Our History</h2>
+                        <p>Dedicated to preserving the memories and historical significance of Bangladesh's Liberation War.</p>
+                        <a href="#documents" class="btn">Explore Archives</a>
+                    </div>
+                    <div class="slide-image" style="background-image: url('/api/placeholder/1200/600')"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>Voices of Freedom</h2>
+                        <p>Listen to firsthand accounts from individuals who fought for or witnessed the birth of Bangladesh.</p>
+                        <a href="#interviews" class="btn">Hear Their Stories</a>
+                    </div>
+                    <div class="slide-image" style="background-image: url('/api/placeholder/1200/600')"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>Visual History</h2>
+                        <p>Explore our extensive collection of photographs documenting crucial moments of the Liberation War.</p>
+                        <a href="#photographs" class="btn">View Gallery</a>
+                    </div>
+                    <div class="slide-image" style="background-image: url('/api/placeholder/1200/600')"></div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <h2>About the Liberation War Archive</h2>
+            <p>The Liberation War Archive is a comprehensive online repository dedicated to preserving the history and memories of Bangladesh's 1971 Liberation War. Our mission is to document, digitize, and make accessible the historical materials related to this pivotal moment in Bangladesh's history.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Historical Documents</h3>
+                    <p>Access important treaties, declarations, and official correspondence.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Oral Histories</h3>
+                    <p>Listen to interviews with freedom fighters and witnesses.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photograph Collection</h3>
+                    <p>Explore images capturing key moments of the Liberation War.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="documents">
+        <div class="container">
+            <h2>Historical Documents</h2>
+            <p>Explore our catalog of historical documents related to the Liberation War, including treaties, declarations, and official correspondence.</p>
+            
+            <div class="filter-container">
+                <div class="filter">
+                    <label for="document-type">Type:</label>
+                    <select id="document-type">
+                        <option value="all">All Types</option>
+                        <option value="treaty">Treaties</option>
+                        <option value="declaration">Declarations</option>
+                        <option value="correspondence">Correspondence</option>
+                        <option value="newspaper">Newspaper Articles</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="document-date">Date:</label>
+                    <select id="document-date">
+                        <option value="all">All Dates</option>
+                        <option value="pre-war">Pre-War (Before March 1971)</option>
+                        <option value="during-war">During War (March-December 1971)</option>
+                        <option value="post-war">Post-War (After December 1971)</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="document-search" placeholder="Search documents...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="documents-grid">
+                <div class="document-card" data-type="declaration" data-date="pre-war">
+                    <div class="document-thumbnail">
+                        <img src="/api/placeholder/300/400" alt="Declaration of Independence">
+                    </div>
+                    <div class="document-info">
+                        <h3>Declaration of Independence</h3>
+                        <p class="document-meta">March 26, 1971 | Declaration</p>
+                        <p class="document-description">The official declaration of Bangladesh's independence by Sheikh Mujibur Rahman.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+                <div class="document-card" data-type="treaty" data-date="post-war">
+                    <div class="document-thumbnail">
+                        <img src="/api/placeholder/300/400" alt="Treaty of Peace">
+                    </div>
+                    <div class="document-info">
+                        <h3>Treaty of Peace and Friendship</h3>
+                        <p class="document-meta">December 16, 1971 | Treaty</p>
+                        <p class="document-description">The peace treaty signed following the surrender of Pakistani forces.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+                <div class="document-card" data-type="correspondence" data-date="during-war">
+                    <div class="document-thumbnail">
+                        <img src="/api/placeholder/300/400" alt="Official Correspondence">
+                    </div>
+                    <div class="document-info">
+                        <h3>Official Correspondence</h3>
+                        <p class="document-meta">June 12, 1971 | Correspondence</p>
+                        <p class="document-description">Letters between government officials regarding military operations.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+                <div class="document-card" data-type="newspaper" data-date="during-war">
+                    <div class="document-thumbnail">
+                        <img src="/api/placeholder/300/400" alt="Newspaper Article">
+                    </div>
+                    <div class="document-info">
+                        <h3>International Press Coverage</h3>
+                        <p class="document-meta">August 3, 1971 | Newspaper Article</p>
+                        <p class="document-description">Coverage of the Liberation War in international newspapers.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn">Load More Documents</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interviews Section -->
+    <section id="interviews" class="interviews">
+        <div class="container">
+            <h2>Recorded Interviews</h2>
+            <p>Listen to the voices of those who participated in or witnessed the Liberation War, sharing their personal experiences and memories.</p>
+            
+            <div class="interviews-grid">
+                <div class="interview-card">
+                    <div class="interview-thumbnail">
+                        <img src="/api/placeholder/400/300" alt="Freedom Fighter Interview">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <h3>Abdul Rahman</h3>
+                        <p class="interview-role">Freedom Fighter, Sector 3</p>
+                        <p class="interview-duration"><i class="fas fa-clock"></i> 35:42</p>
+                        <p class="interview-description">Abdul Rahman recounts his experiences as a freedom fighter in Sector 3, detailing key operations and the challenges faced during the war.</p>
+                    </div>
+                </div>
+                <div class="interview-card">
+                    <div class="interview-thumbnail">
+                        <img src="/api/placeholder/400/300" alt="Civilian Witness Interview">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <h3>Fatima Begum</h3>
+                        <p class="interview-role">Civilian Witness</p>
+                        <p class="interview-duration"><i class="fas fa-clock"></i> 27:15</p>
+                        <p class="interview-description">Fatima Begum shares her harrowing story of survival as a civilian during the Liberation War, including her family's displacement and the atrocities she witnessed.</p>
+                    </div>
+                </div>
+                <div class="interview-card">
+                    <div class="interview-thumbnail">
+                        <img src="/api/placeholder/400/300" alt="Military Commander Interview">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <h3>Major Ziaur Rahman</h3>
+                        <p class="interview-role">Military Commander</p>
+                        <p class="interview-duration"><i class="fas fa-clock"></i> 48:10</p>
+                        <p class="interview-description">Major Ziaur Rahman discusses the military strategies employed during the Liberation War and his role in organizing resistance forces.</p>
+                    </div>
+                </div>
+                <div class="interview-card">
+                    <div class="interview-thumbnail">
+                        <img src="/api/placeholder/400/300" alt="International Aid Worker Interview">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="interview-role">International Aid Worker</p>
+                        <p class="interview-duration"><i class="fas fa-clock"></i> 32:50</p>
+                        <p class="interview-description">Dr. Sarah Johnson recounts her experiences providing medical assistance to refugees and wounded freedom fighters during the conflict.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn">View More Interviews</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photographs Section -->
+    <section id="photographs" class="photographs">
+        <div class="container">
+            <h2>Photograph Gallery</h2>
+            <p>Explore our collection of historical photographs documenting key moments, places, and people from the Liberation War.</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="people">People</button>
+                <button class="filter-btn" data-filter="locations">Locations</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="events">
+                    <img src="/api/placeholder/400/300" alt="Independence Rally">
+                    <div class="gallery-item-overlay">
+                        <h3>Independence Rally</h3>
+                        <p>March 7, 1971 | Dhaka</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="people">
+                    <img src="/api/placeholder/400/300" alt="Freedom Fighters">
+                    <div class="gallery-item-overlay">
+                        <h3>Freedom Fighters</h3>
+                        <p>April 1971 | Sector 2</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="locations">
+                    <img src="/api/placeholder/400/300" alt="Refugee Camp">
+                    <div class="gallery-item-overlay">
+                        <h3>Refugee Camp</h3>
+                        <p>June 1971 | Border Area</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="/api/placeholder/400/300" alt="Victory Celebration">
+                    <div class="gallery-item-overlay">
+                        <h3>Victory Celebration</h3>
+                        <p>December 16, 1971 | Dhaka</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="people">
+                    <img src="/api/placeholder/400/300" alt="Political Leaders">
+                    <div class="gallery-item-overlay">
+                        <h3>Political Leaders</h3>
+                        <p>November 1971 | Mujibnagar</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="locations">
+                    <img src="/api/placeholder/400/300" alt="Battlefield">
+                    <div class="gallery-item-overlay">
+                        <h3>Battlefield</h3>
+                        <p>October 1971 | Sector 4</p>
+                        <button class="view-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lightbox for Photos -->
+            <div class="lightbox" id="lightbox">
+                <div class="lightbox-content">
+                    <span class="close-lightbox">&times;</span>
+                    <img src="" id="lightbox-img" alt="Enlarged photo">
+                    <div class="lightbox-caption">
+                        <h3 id="lightbox-title"></h3>
+                        <p id="lightbox-description"></p>
+                    </div>
+                    <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to contribute to our archive? Reach out to us using the form below or contact us directly.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>123 Archive Building, Dhaka University Campus, Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@liberationwararchive.org</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+880 2 9876543</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Sunday - Thursday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contribution-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="contribution-type">Contribution Type (Optional)</label>
+                            <select id="contribution-type" name="contribution-type">
+                                <option value="none">-- Select Type --</option>
+                                <option value="document">Historical Document</option>
+                                <option value="interview">Interview/Testimony</option>
+                                <option value="photograph">Photograph</option>
+                                <option value="artifact">Artifact</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group file-upload">
+                            <label for="file-upload">Upload Files (Optional)</label>
+                            <input type="file" id="file-upload" name="file-upload" multiple>
+                            <div class="upload-placeholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag files here or click to browse</p>
+                                <span>Maximum file size: 10MB</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Liberation War Archive</h2>
+                    <p>Preserving the history and memories of Bangladesh's Liberation War.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#documents">Documents</a></li>
+                        <li><a href="#interviews">Interviews</a></li>
+                        <li><a href="#photographs">Photographs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest additions and events.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Liberation War Archive. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
