@@ -1,0 +1,157 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liberation War Archive - Preserving the history and memories of the Liberation War of Bangladesh">
+    <meta name="keywords" content="Liberation War, Bangladesh, History, Archive, Documents, Interviews, Photographs">
+    <title>Liberation War Archive</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Liberation War Archive</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="documents.html" >Documents</a></li>
+                    <li><a href="interviews.html">Interviews</a></li>
+                    <li><a href="photographs.html">Photographs</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact ">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to contribute to our archive? Reach out to us using the form below or contact us directly.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>123 Archive Building, Dhaka University Campus, Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@liberationwararchive.org</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+880 2 9876543</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Sunday - Thursday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contribution-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="contribution-type">Contribution Type (Optional)</label>
+                            <select id="contribution-type" name="contribution-type">
+                                <option value="none">-- Select Type --</option>
+                                <option value="document">Historical Document</option>
+                                <option value="interview">Interview/Testimony</option>
+                                <option value="photograph">Photograph</option>
+                                <option value="artifact">Artifact</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group file-upload">
+                            <label for="file-upload">Upload Files (Optional)</label>
+                            <input type="file" id="file-upload" name="file-upload" multiple="">
+                            <div class="upload-placeholder">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag files here or click to browse</p>
+                                <span>Maximum file size: 10MB</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Liberation War Archive</h2>
+                    <p>Preserving the history and memories of Bangladesh's Liberation War.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="documents.html">Documents</a></li>
+                        <li><a href="interviews.html">Interviews</a></li>
+                        <li><a href="photographs.html">Photographs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest additions and events.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required="">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Liberation War Archive. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body></html>

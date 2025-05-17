@@ -396,17 +396,7 @@ function initInterviews() {
     const interviewCards = document.querySelectorAll('.interview-card');
     const loadMoreInterviewsBtn = document.querySelector('.interviews .load-more .btn');
     
-    // Play button click handler (simulated)
-    interviewCards.forEach(card => {
-        const playButton = card.querySelector('.play-button');
-        if (playButton) {
-            playButton.addEventListener('click', function() {
-                const interviewTitle = card.querySelector('h3').textContent;
-                // In a real application, this would play the audio/video
-                alert(`Playing interview: ${interviewTitle}. In a real application, this would launch an audio/video player.`);
-            });
-        }
-    });
+    
     
     // Load more interviews button (simulated)
     if (loadMoreInterviewsBtn) {

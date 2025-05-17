@@ -1,0 +1,161 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liberation War Archive - Preserving the history and memories of the Liberation War of Bangladesh">
+    <meta name="keywords" content="Liberation War, Bangladesh, History, Archive, Documents, Interviews, Photographs">
+    <title>Liberation War Archive</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Liberation War Archive</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="documents.html" class="active">Documents</a></li>
+                    <li><a href="interviews.html">Interviews</a></li>
+                    <li><a href="photographs.html">Photographs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Documents Section -->
+    <section id="documents" class="documents" style="margin-top: 24px;">
+        <div class="container">
+            <h2>Historical Documents</h2>
+            <p>Explore our catalog of historical documents related to the Liberation War, including treaties, declarations, and official correspondence.</p>
+            
+            <div class="filter-container">
+                <div class="filter">
+                    <label for="document-type">Type:</label>
+                    <select id="document-type">
+                        <option value="all">All Types</option>
+                        <option value="treaty">Treaties</option>
+                        <option value="declaration">Declarations</option>
+                        <option value="correspondence">Correspondence</option>
+                        <option value="newspaper">Newspaper Articles</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="document-date">Date:</label>
+                    <select id="document-date">
+                        <option value="all">All Dates</option>
+                        <option value="pre-war">Pre-War (Before March 1971)</option>
+                        <option value="during-war">During War (March-December 1971)</option>
+                        <option value="post-war">Post-War (After December 1971)</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="document-search" placeholder="Search documents...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="documents-grid">
+                <div class="document-card" data-type="declaration" data-date="pre-war">
+                    <div class="document-thumbnail">
+                        <img src="assets/image/declaration.png" alt="Declaration of Independence">
+                    </div>
+                    <div class="document-info">
+                        <h3>Declaration of Independence</h3>
+                        <p class="document-meta">March 26, 1971 | Declaration</p>
+                        <p class="document-description">The official declaration of Bangladesh's independence by Sheikh Mujibur Rahman.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+                <div class="document-card" data-type="treaty" data-date="post-war">
+                    <div class="document-thumbnail">
+                        <img src="assets/image/friendship.png" alt="Treaty of Peace">
+                    </div>
+                    <div class="document-info">
+                        <h3>Treaty of Peace and Friendship</h3>
+                        <p class="document-meta">December 16, 1971 | Treaty</p>
+                        <p class="document-description">The peace treaty signed following the surrender of Pakistani forces.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+                <div class="document-card" data-type="correspondence" data-date="during-war">
+                    <div class="document-thumbnail">
+                        <img src="assets/image/correspondence.png" alt="Official Correspondence">
+                    </div>
+                    <div class="document-info">
+                        <h3>Official Correspondence</h3>
+                        <p class="document-meta">June 12, 1971 | Correspondence</p>
+                        <p class="document-description">Letters between government officials regarding military operations.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+                <div class="document-card" data-type="newspaper" data-date="during-war">
+                    <div class="document-thumbnail">
+                        <img src="assets/image/press-coverage.png" alt="Newspaper Article">
+                    </div>
+                    <div class="document-info">
+                        <h3>International Press Coverage</h3>
+                        <p class="document-meta">August 3, 1971 | Newspaper Article</p>
+                        <p class="document-description">Coverage of the Liberation War in international newspapers.</p>
+                        <a href="#" class="btn">View Document</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Liberation War Archive</h2>
+                    <p>Preserving the history and memories of Bangladesh's Liberation War.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="documents.html">Documents</a></li>
+                        <li><a href="interviews.html">Interviews</a></li>
+                        <li><a href="photographs.html">Photographs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest additions and events.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required="">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Liberation War Archive. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body></html>
